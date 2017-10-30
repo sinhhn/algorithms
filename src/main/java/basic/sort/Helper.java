@@ -1,7 +1,7 @@
 package basic.sort;
 
 public class Helper {
-    public static void exch(Comparable[] a, int i, int j) {
+    public static void swap(Comparable[] a, int i, int j) {
         Comparable t = a[i];
         a[i] = a[j];
         a[j] = t;

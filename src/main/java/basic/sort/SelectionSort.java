@@ -10,7 +10,7 @@ public class SelectionSort {
                     min = j;
                 }
             }
-            Helper.exch(a, i, min);
+            Helper.swap(a, i, min);
         }
         return a;
     }
