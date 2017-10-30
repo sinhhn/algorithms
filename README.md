@@ -2,7 +2,6 @@
 ## Giải thuật sort
 ### Selection Sort
 Ý tưởng của giải thuật này là chọn ra phần tử bé nhất xếp vào đầu tiên và tiếp tục như thế cho đế hết.
-Giả mã:
 
 ```
 for(int i = 0; i < n; i++) {
