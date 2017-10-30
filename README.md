@@ -4,6 +4,7 @@
 1. Thuật toán
 
 	Ý tưởng cơ bản của giải thuật này cũng giống như chơi bài. Người chơi sẽ rút lần lượt từ quân thứ 2 và so với các con bài trước nó để chèn vào vị trí thích hợp.
+	
 	![insertion sort](https://goo.gl/aFH1kj)
 
 	```
