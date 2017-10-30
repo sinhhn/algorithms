@@ -1,13 +1,6 @@
 # Created by .ignore support plugin (hsz.mobi)
 .gradle/
-.idea/compiler.xml
-.idea/gradle.xml
-.idea/inspectionProfiles/
-.idea/libraries/
-.idea/misc.xml
-.idea/modules.xml
-.idea/modules/
-.idea/workspace.xml
+.idea
 gradle/
 out/
 
