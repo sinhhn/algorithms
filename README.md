@@ -1,32 +1,52 @@
 # Algorithms
 ## Giải thuật sort
-### Selection Sort
-Ý tưởng của giải thuật này là chọn ra phần tử bé nhất xếp vào đầu tiên và tiếp tục như thế cho đế hết.
-![Selection Sort](http://codepumpkin.com/wp-content/uploads/2017/10/SelectionSort_Avg_case.gif)
+### Insertion Sort
+1. Thuật toán
 
-```
-for(int i = 0; i < n; i++) {
-	int min = i;
-	for(int j = i + 1; j < n; j++) {
-		if(a[j] < a[min]) {
-			min = j;
+	Ý tưởng cơ bản của giải thuật này cũng giống như chơi bài. Người chơi sẽ rút lần lượt từ quân thứ 2 và so với các con bài trước nó để chèn vào vị trí thích hợp.
+	![insertion sort](https://goo.gl/aFH1kj)
+
+	```
+	for(int i = 1; i < n; i++) {
+		for(int j = i; j > 0 && a[j] < a[j-1]; j++) {
+			swap(a, j, j - 1);
 		}
 	}
-	if(min != i) {
-		swap(a, i, j);
+	```
+	
+2. Độ phức tạp
+
+	Thuật toán insertion sort sử dụng *n^2 / 2* phép so sánh và *n^2 / 2* phép hoán vị. Độ phức tạp của thuật toán này là O(n^2)
+
+### Selection Sort
+1. Thuật toán
+
+	Thuật toán này có tư tưởng rất đơn giản. Chọn phần tử nhỏ nhất đưa vào vị trí đầu tiên. Tiếp theo chọn phần tử nhỏ thứ 2 đưa vào vị trí thứ 2. Tiếp tục như thế cho đến khi dãy được sắp xếp.
+
+	![Selection Sort](https://goo.gl/gchQRu)
+	
+	```
+	for(int i = 0; i < n; i++) {
+		int min = i;
+		for(int j = i+1; j < n; j++) {
+			if(a[j] < a[min]) {
+				swap(a, i, j);
+			}	
+		}
 	}
-}
-```
+	```
 
-### Insertion Sort
-Ý tưởng cơ bản của giải thuật này là chọn số bé nhất insert vào đầu
+2. Độ phức tạp
 
-![insertion sort](https://upload.wikimedia.org/wikipedia/commons/9/9c/Insertion-sort-example.gif)
+	Tại phần tử thứ *i* ta luôn có *n-i* phép so sánh. Vì vậy tổng số phép so sánh sẽ là: *(n-1) + (n-2) + .... + 1 = 3(n-1)n / 2*. Vậy độ phức tạp của thuật toán là O(n^2).		
 
-```
-for(int i = 1; i < n; i++) {
-	for(int j = i; j > 0 && a[j] < a[j-1]; j++) {
-		swap(a, j, j - 1);
-	}
-}
-```
+	
+
+### Quick Sort
+1. Thuật toán
+2. Độ phức tạp
+
+### Merge Sort
+
+### Heap Sort
+
