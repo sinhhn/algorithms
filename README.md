@@ -16,7 +16,7 @@
 	```
 	
 2. Độ phức tạp
-	Thuật toán insertion sort sử dụng *n^2 / 2* phép so sánh và *n^2 / 2* phép hoán vị. Độ phức tạp của thuật toán này là O(n^2)
+	Thuật toán insertion sort sử dụng *n^2 / 2* phép so sánh và *n^2 / 2* phép hoán vị. Độ phức tạp của thuật toán này là O(n^2).
 
 ### Selection Sort
 1. Thuật toán
