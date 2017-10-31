@@ -52,6 +52,6 @@ O(logn)
 2. Độ phức tạp
 
 ### Merge Sort
-
+Độ phức tạp O(logn)
 ### Heap Sort
-
+Độ phức tạp O(logn)
