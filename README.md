@@ -16,7 +16,6 @@
 	```
 	
 2. Độ phức tạp
-O(logn)
 	Thuật toán insertion sort sử dụng *n^2 / 2* phép so sánh và *n^2 / 2* phép hoán vị. Độ phức tạp của thuật toán này là O(n^2)
 
 ### Selection Sort
@@ -52,6 +51,7 @@ O(logn)
 2. Độ phức tạp
 
 ### Merge Sort
-Độ phức tạp O(logn)
+1. Thuật Toán
+2. Độ phức tạp O(logn)
 ### Heap Sort
 Độ phức tạp O(logn)
