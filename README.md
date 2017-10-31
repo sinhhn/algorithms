@@ -45,6 +45,10 @@
 
 ### Quick Sort
 1. Thuật toán
+
+	Đây là thuật toán nổi tiếng nhất trong các thuật toán cơ bản. 
+	
+	![Quicksort](https://goo.gl/3AdjtN)
 2. Độ phức tạp
 
 ### Merge Sort
