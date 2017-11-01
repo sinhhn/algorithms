@@ -1,4 +1,4 @@
-package basic;
+package basic.sort;
 
 import basic.sort.SelectionSort;
 import org.junit.Assert;
