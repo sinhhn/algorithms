@@ -7,13 +7,24 @@ public class BinarySearch {
     }
 
     private static int binarySearch(Comparable[] a, int l, int r, Comparable element) {
-        int mid = (l + r) / 2;
-        if (element.compareTo(a[mid]) < 0) {
-            return binarySearch(a, l, mid, element);
-        } else if (element.compareTo(a[mid]) > 0) {
-            return binarySearch(a, mid, r, element);
-        } else {
-            return mid;
+        if(l < r) {
+            int mid = (l + r) / 2;
+            if (element.compareTo(a[mid]) < 0) {
+                return binarySearch(a, l, mid - 1, element);
+            } else if (element.compareTo(a[mid]) > 0) {
+                return binarySearch(a, mid + 1, r, element);
+            } else {
+                return mid;
+            }
         }
+        else {
+            if (element.compareTo(a[l]) == 0){
+                return l;
+            }
+            else {
+                return -1;
+            }
+        }
+
     }
 }
