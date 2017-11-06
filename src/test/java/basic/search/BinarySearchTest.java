@@ -22,8 +22,12 @@ public class BinarySearchTest {
 
     @Test
     void binarySearchTest3() {
-        Integer[] a = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30};
-        Integer element = 40;
-        Assert.assertEquals(-1, BinarySearch.binarySearch(a, element));
+        int n = 10000000;
+        Integer[] a = new Integer[n];
+        for (int i = 1; i <= n; i++) {
+            a[i - 1] = i;
+        }
+        Integer element = 777777;
+        Assert.assertEquals(element - 1, BinarySearch.binarySearch(a, element));
     }
 }
