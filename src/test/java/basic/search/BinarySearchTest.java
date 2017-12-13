@@ -30,4 +30,5 @@ public class BinarySearchTest {
         Integer element = 777777;
         Assert.assertEquals(element - 1, BinarySearch.binarySearch(a, element));
     }
+
 }
