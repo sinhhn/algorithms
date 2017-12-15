@@ -16,4 +16,10 @@ public class NonRepeatCharacterTest {
         Assert.assertEquals('_', NonRepeatCharacter.firstNotRepeatingCharacter(s));
     }
 
+    @Test
+    void firstNonRepeatCharacterTest3() {
+        String s = "abacabaabacaabacabaabacabaabacabaabacabaabacabaabacabagabacabaababacabaabacaabacabaabacabaabacabaabacabaabacabaabacabagabacabaabacabaabacabaabacabaabacabaabacabaabacabaabacabaabacabaabacabaabacabaabacabaabacabaabacabaabacabaabacabaZbaabacabaabacaabacabaabacabaabacabaabacabaabacabaabacabagabacabaabacabaabacabaabacabaabacabaabacabaabacabaabacabaabacabaabacabaabacabaabacabaabacabaabacabaabacabaabacabaZbaabacabaabacaabacabaabacabaabacabaabacabaabacabaabacabiagabacabaabacabaabacabaabacabaabacabaabacabaabacabaabacabaabacabaabacabaabacabaabacabaabacabaabacabaabacabaabacabaZbaacabaabacabaabacabaabacabaabacabaabacabaabacabaabacabaabacabaabacabaabacabaabacabaabacabaabacabaabacabaZba";
+        Assert.assertEquals('i', NonRepeatCharacter.firstNotRepeatingCharacter(s));
+    }
+
 }

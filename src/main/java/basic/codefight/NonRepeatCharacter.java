@@ -8,7 +8,6 @@ public class NonRepeatCharacter {
         for (int i = 0; i < s.length(); i++) {
             boolean flag = true;
             if(set.contains(s.charAt(i))) {
-                flag = false;
                 continue;
             }
             for (int j = 0; j < s.length(); j++) {
